@@ -1,0 +1,1 @@
+from whisper_score.get_score import get_score
