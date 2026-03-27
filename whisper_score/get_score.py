@@ -26,7 +26,7 @@ def get_score(audio_file: str, model_type: str) -> torch.Tensor:
     #     device = torch.device("cpu") #May be slow ! 
 
 
-    device = torch.device("cpu")
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
     
 
